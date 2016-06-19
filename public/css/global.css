@@ -1,0 +1,148 @@
+/* Box sizing resets*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Body resets and fancy font*/
+body{
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.jamjammusic{
+  position: relative;
+}
+
+.search div, .search input {
+  width: 100%;
+}
+
+.search input {
+  border: none;
+  border-bottom: 2px solid rgb(111, 197, 225);
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+.details h3{
+  text-align: center;
+  padding: 50px 10px;
+  margin: 0;
+  color: white;
+}
+
+.player{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.player div{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.player .player__backward button,
+.player .player__forward button{
+  background: none;
+  border: none;
+  color: rgb(111, 197, 225);
+  width: 75px;
+  height: 75px;
+  font-size: 35px;
+}
+
+.player .player__main button:hover,
+.player .player__backward button:hover,
+.player .player__forward button:hover{
+  color: rgba(111, 197, 225, 0.7);
+}
+
+.player .player__main button {
+  color: rgb(111, 197, 225);
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+}
+
+.progress{
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+  position: absolute;
+  width: 500px;
+}
+
+.progress span {
+  padding: 0px 5px;
+}
+
+.progress progress:not([value]){
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 180px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.60) inset;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.progress progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 180px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.60) inset;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.progress progress:not([value])::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.60) inset;
+}
+
+.progress progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.60) inset;
+}
+
+.progress progress[value]::-webkit-progress-value {
+    background-color: rgb(111, 197, 225);
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+.footer{
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #524C4C;
+}
+
+.footer p{
+  text-align: center;
+}
+
+.footer .scotchio{
+  height: 30px;
+  padding: 0px 6px;
+  width: auto;
+}
+.footer .soundcloud{
+  height: 30px;
+  padding: 0px 2px;
+  width: auto;
+}
